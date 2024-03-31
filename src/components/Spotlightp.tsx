@@ -1,4 +1,3 @@
-import React from 'react';
 import { Spotlight } from '../components/ui/Spotlight';
 
 export function SpotlightPreview() {

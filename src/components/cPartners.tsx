@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrandPartners } from './brandPartners';
 import { AnimatedTooltipPreview } from './teamf';
 import { Service } from './service';
