@@ -19,19 +19,6 @@ const HeaderComponent = () => {
           >
             <div className="relative h-8 w-8 md:h-6 md:w-6 bg-black border border-slate-800 text-white flex items-center justify-center rounded-md text-sm antialiased">
               <div className="absolute h-10 w-full bg-white/[0.2] -top-10 inset-x-0 rounded-full blur-xl"></div>
-              <div className="text-sm text-emerald-500 relative z-20">
-                <img
-                  alt="Logo"
-                  loading="lazy"
-                  width="50"
-                  height="50"
-                  decoding="async"
-                  data-nimg="1"
-                  srcSet=""
-                  src="./src/assets/logo.png"
-                  style={{ color: 'transparent' }}
-                />
-              </div>
             </div>
             <div className="flex flex-col">
               <h1 className="text-black dark:text-white">Flancing</h1>
