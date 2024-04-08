@@ -28,7 +28,7 @@ const HeaderComponent = () => {
                   decoding="async"
                   data-nimg="1"
                   srcSet=""
-                  src="src/assets/logo.png"
+                  src="./src/assets/logo.png"
                   style={{ color: 'transparent' }}
                 />
               </div>
