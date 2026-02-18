@@ -22,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-docker-username/flancing-app:latest
+          tags: amberrrrrr/flancing-app:latest
