@@ -23,4 +23,4 @@ jobs:
           context: .
           push: true
           # Double check this is all lowercase
-          tags: amberrrrrr/flancing-app:latest
+          tags: amberrrrrrr/flancing-app:latest
