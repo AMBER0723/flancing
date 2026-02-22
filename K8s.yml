@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flancing-deployment
+  labels:
+    app: flancing-web
+spec:
+  replicas: 2 # Runs two copies for high availability
+  selector:
+    matchLabels:
+      app: flancing-web
+  template:
+    metadata:
+      labels:
+        app: flancing-web
+    spec:
+      containers:
+      - name: flancing-container
+        image: amberrrrrrr/flancing-app:latest # Your verified image
+        ports:
+        - containerPort: 8080 # The port your app listens on inside the container
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flancing-service
+spec:
+  type: LoadBalancer # Exposes the app to your local machine
+  selector:
+    app: flancing-web
+  ports:
+    - protocol: TCP
+      port: 80         # Access it at http://localhost
+      targetPort: 5173 # Maps to your container port
