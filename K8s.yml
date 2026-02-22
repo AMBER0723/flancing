@@ -18,7 +18,7 @@ spec:
       - name: flancing-container
         image: amberrrrrrr/flancing-app:latest # Your verified image
         ports:
-        - containerPort: 8080 # The port your app listens on inside the container
+        - containerPort: 5173 # The port your app listens on inside the container
 ---
 apiVersion: v1
 kind: Service
